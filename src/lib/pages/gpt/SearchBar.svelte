@@ -12,7 +12,7 @@
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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',
+        'Authorization': 'Bearer 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',
       },
       body: JSON.stringify({
         "model": "text-davinci-003",
@@ -44,11 +44,6 @@
 </div>
 
 <style>
-
-body{
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
-}
 
 .search {
   width: 100%;
