@@ -85,7 +85,7 @@
   <ul style="float:left;margin-top:10px;">
 	  {#each rows as row}
       {#if row.text != ''}
-        <li><a on:click="{viewArticle(row)}"> {(row.title).toUpperCase()}</a></li>
+        <li><button on:click="{viewArticle(row)}"> {(row.title).toUpperCase()}</button></li>
       {/if}
     {/each}
   </ul>
