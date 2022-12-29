@@ -12,7 +12,7 @@
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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',
+        'Authorization': 'Bearer ' + import.meta.env.API_KEY_OPEN_AI,
       },
       body: JSON.stringify({
         "model": "text-davinci-003",
