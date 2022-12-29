@@ -6,7 +6,7 @@
     import { auth, articleCollection, articleDoc } from '../../../firebase.js';
     import { onMount } from 'svelte';
     import { onAuthStateChanged } from "firebase/auth";
-    import { deleteDoc, getDocs, query, where } from 'Firebase/firestore/lite';
+    import { deleteDoc, getDocs, query, where } from 'firebase/firestore/lite';
     let articles = [];
     let rows = [];
     let uidUser;
