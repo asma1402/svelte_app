@@ -9,7 +9,7 @@
   import { onMount } from 'svelte';
   import { onAuthStateChanged } from "firebase/auth";
   import { auth } from '../../../firebase.js';
-  import { addDoc } from 'Firebase/firestore/lite';
+  import { addDoc } from 'firebase/firestore/lite';
   import { articleCollection } from '../../../firebase.js';
   
   onMount(() => {
