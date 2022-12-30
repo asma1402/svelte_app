@@ -7,7 +7,6 @@
   async function submitRequest() {
     dispatch('generatedText', '');
     dispatch('sendRequest');
-    console.log(import.meta.env);
     await fetch("https://api.openai.com/v1/completions", {
       method: 'POST',
       mode: 'cors',
@@ -86,7 +85,24 @@ body{
 }
 
 .wrap{
-  width: 30%;
-  margin-left: 35%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 476px) {
+    .wrap {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 475px),only screen and (min-width: 800px)  {
+  .wrap {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .wrap {
+    width: 30%;
+  }
 }
 </style>
