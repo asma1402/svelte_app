@@ -37,7 +37,8 @@
 	<button on:click={close}> X </button>
 	{#if !showTemplates && !showView}
 		<div style = "margin-top:40px;">
-		<slot name="header">{title}</slot>
+		<span style = "font-size: 10px;display:block;border-radius:5px; color:white;background-color:black;">This is HTML! scroll down to preview </span>
+		<slot name="header">{title.toUpperCase()}</slot>
 		<hr>
 		<slot>{text}</slot>
 		<hr>
@@ -46,6 +47,7 @@
 	{:else if showTemplates && !showView}
 		<TemplatePage on:viewTemplate={()=> showView=true}/>
 	{:else if showView}
+		<span style = "font-size: 13px;display:block; color:red;background-color:black;">This is a preview, scroll down to download </span>
 		<svelte:component this={components[componantName]} bind:title="{title}" bind:text="{text}"/>
 		<CreateFileButton />
 	{/if}
