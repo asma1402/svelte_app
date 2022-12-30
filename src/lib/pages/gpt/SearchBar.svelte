@@ -7,12 +7,13 @@
   async function submitRequest() {
     dispatch('generatedText', '');
     dispatch('sendRequest');
+    console.log(import.meta.env);
     await fetch("https://api.openai.com/v1/completions", {
       method: 'POST',
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + import.meta.env.API_KEY_OPEN_AI,
+        'Authorization': 'Bearer ' + import.meta.env.VITE_API_KEY_OPEN_AI,
       },
       body: JSON.stringify({
         "model": "text-davinci-003",
