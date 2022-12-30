@@ -42,14 +42,14 @@
             {#if isAuthUser}
                 <a on:click="{logout}" class="a-link">Logout</a>
                 <a href="/#/gpt" class="a-link">GPT-3</a>
-                <a href="/#/search-history" class="a-link">Search history</a>
+                <a href="/#/search-history" class="a-link">History</a>
             {:else}
                 {#if !loginPage}
                     <a href="/" class="a-link">Login</a>
                 {/if}
                 <a href="/#/register" class="a-link">Register</a> 
-            {/if}
                 <a href="/#/about" class="a-link">About</a>
+            {/if}
         </nav>
 </div>
 
