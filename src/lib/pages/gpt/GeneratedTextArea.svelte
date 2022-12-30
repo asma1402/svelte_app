@@ -37,7 +37,7 @@
 	<button on:click={close}> X </button>
 	{#if !showTemplates && !showView}
 		<div style = "margin-top:40px;">
-		<span style = "font-size: 10px;display:block;border-radius:5px; color:white;background-color:black;">This is HTML! scroll down to preview </span>
+		<span style = "font-size: 10px;display:block;border-radius:5px; color:red;text-decoration:underline;">This is HTML! scroll down to preview </span>
 		<slot name="header">{title.toUpperCase()}</slot>
 		<hr>
 		<slot>{text}</slot>
