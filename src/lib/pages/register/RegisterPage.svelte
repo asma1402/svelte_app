@@ -77,14 +77,25 @@ button:hover {
 
 .container {
   padding: 16px;
-  width: 30%;
   margin:auto;
 }
 
-@media screen and (max-width: 300px) {
+@media only screen and (max-width: 476px) {
     .container {
-        width: 100%;
-    }
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 475px),only screen and (min-width: 800px)  {
+  .container {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .container {
+    width: 30%;
+  }
 }
 
 </style>

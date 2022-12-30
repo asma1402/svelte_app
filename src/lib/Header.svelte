@@ -50,7 +50,6 @@
                 <a href="/#/register" class="a-link">Register</a> 
             {/if}
                 <a href="/#/about" class="a-link">About</a>
-                <a href="/github" class="a-link">GitHub</a> 
         </nav>
 </div>
 
